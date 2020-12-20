@@ -43,7 +43,7 @@
 }
 
 .nav:hover {
-    background: #000;
+    background: #2C2426;
 }
 
 .upper-nav {
@@ -84,7 +84,6 @@
 }
 
 .lower-nav {
-
 }
 
 .lower-nav ul {
@@ -95,6 +94,7 @@
 
 .lower-nav ul li {
     padding: 0px 50px;
+    width: 160px;
 }
 
 .lower-nav ul li a {
@@ -129,36 +129,51 @@
 }
 
 .cover-upper-left {
-    background-color: #345;
+    background-color: #334455;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cover-upper-left h1 {
-
+.cover-upper-left a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .cover-upper-right {
-    background-color: #987;
+    background-color: #998877;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cover-upper-right h1 {
-
+.cover-upper-right a {
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .cover-lower {
-    background-color: #31A;
+    background-color: #313F31;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cover-lower h1 {
-
+.cover-lower a {
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 /***********************************************************************

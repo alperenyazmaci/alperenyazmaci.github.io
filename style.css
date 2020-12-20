@@ -62,7 +62,8 @@
 }
 
 .upper-left-nav ul li:nth-child(1){
-    padding: 0px 10px 0px 0px;
+    padding-right: 5px;
+    padding-left: 2px;
 }
 
 .upper-middle-nav {
@@ -99,6 +100,11 @@
 
 .lower-nav ul li a {
     color: white;
+}
+
+.lower-nav ul li a:hover {
+    color: #F5D5C5;
+    text-decoration: underline;
 }
 
 .push-rigth {

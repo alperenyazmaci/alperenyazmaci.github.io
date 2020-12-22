@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800&display=swap');
 
+html {
+    font-size: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,24 +38,32 @@ body {
  *  Nav Bar
  **********************************************************************/
 .nav {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+    background: rgba(44, 36, 38, 0.35);
+    border-bottom: 1px solid rgba(44, 36, 38, 0.8);
+    display: flex;
+    flex-flow: column;
     list-style: none;
     align-items: center;
     margin: 0;
-    font-size: 1em;
+    font-size: 1.6rem;
     position: fixed;
     width: 100%;
 }
 
 .nav:hover {
-    background: #2C2426;
+    background: rgba(44, 36, 38, 0.9);
+    border-bottom: 1px solid #444;
 }
 
 .upper-nav {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
+    /*display: grid;
+    grid-template-columns: 25% 50% 25%;*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .upper-left-nav {
@@ -78,12 +90,11 @@ body {
 }
 
 .upper-left-nav-select select {
-
     border: 0;
 }
 
 .upper-middle-nav {
-    
+    align-self: center;
 }
 
 .upper-middle-nav h1 {
@@ -100,7 +111,15 @@ body {
     color: white;
 }
 
+.upper-right-small {
+    display: none;
+}
+
 .lower-nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .lower-nav ul {
@@ -110,8 +129,17 @@ body {
 }
 
 .lower-nav ul li {
-    padding: 0px 50px;
-    width: 160px;
+    padding: 0px;
+    width: 90px;
+    margin: 0 40px;
+}
+
+.lower-nav ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+.lower-nav ul li:nth-child(5) {
+    margin-right: 0;
 }
 
 .lower-nav ul li a {
@@ -131,8 +159,27 @@ body {
     margin-right: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    .nav {
+        background: rgba(44, 36, 38, 0.9);
+        border-bottom: 1px solid #444;
+    }
 
+    .lower-nav {
+        display: none;
+    }
+
+    .upper-left-nav-select {
+        display: none;
+    }
+
+    .upper-right-large {
+        display: none;
+    }
+
+    .upper-right-small {
+        display: inline;
+    }
 }
 
 /***********************************************************************
@@ -201,6 +248,9 @@ body {
 /***********************************************************************
  *  Grid Panel
  **********************************************************************/
+.grid {
+
+}
 
 .grid-header {
     display: flex;
@@ -217,6 +267,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 35px;
+    padding: 35px 35px 0px 35px;
+}
+
+.grid-wrapper-last {
     padding: 35px;
 }
 
@@ -241,14 +295,14 @@ body {
 .box-name {
     text-decoration: none;
     color: #7A7A7A;
-    font-size: 1em;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .box-price {
     text-decoration: none;
     color: #4D4D4D;
-    font-size: 1em;
+    font-size: 1.5rem;
     text-align: center;
 }
 
